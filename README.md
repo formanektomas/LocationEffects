@@ -1,4 +1,4 @@
-# LocationEffects
+# Location Effects -- Public GitHub repository
 
 ## Supporting matterials for the artile 
 
