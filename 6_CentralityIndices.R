@@ -57,7 +57,7 @@ for (i in 1){ # instead of "1", use 1:X where X is the number of cities used.
     #
     mutate(bc = centrality_betweenness(directed=F,cutoff=3000)) %>% # betweenness
     mutate(hc = centrality_hub()) %>%                               # hub
-    mutate(cc = centrality_closeness(mode = "all",cutoff=3000)) %>% # closeness
+    mutate(cc = centrality_closeness(mode = "all",cutoff=3000,normalized=TRUE)) %>% # closeness
     filter(is.na(bc)==F,is.na(hc)==F,is.na(cc)==F) %>% 
     st_as_sf()
   #
