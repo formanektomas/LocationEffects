@@ -26,7 +26,7 @@ for (ii in c(1,2,4,5,6)) { # 3rd cluster (Services) is omitted from estimation
   print(ii)
   DF_odh <- DF_long %>% 
     filter(cluster == ii)
-  lm.fit <- lme(logsales~log(PopDens) + log(SalesArea) + log(mallDist) +  inMall 
+  lm.fit <- lme(logsales~log(PopDens) + log(StoreArea) + log(mallDist) +  inMall 
                 # sales are log-transformed in the dataframe used
                 + Post10mWalk + Rstn5mWalk + Pharm10mWalk + cityPer + log(WageMedian) + cc_scaled, 
                 random=~1|product, data=DF_long, method="ML")
