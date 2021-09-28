@@ -11,7 +11,7 @@ library(sandwich)
 # 
 #
 # model formula follows from article
-formula1 <- y ~ log(PopDens) + log(SalesArea) + log(mallDist) +  inMall + Post10mWalk + Rstn5mWalk + Pharm10mWalk + cityPer + log(WageMedian) + cc_scaled
+formula1 <- y ~ log(PopDens) + log(StoreArea) + log(mallDist) +  inMall + Post10mWalk + Rstn5mWalk + Pharm10mWalk + cityPer + log(WageMedian) + cc_scaled
 #
 models <- list()
 for (ii in 1:58) { #
